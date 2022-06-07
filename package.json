@@ -1,0 +1,36 @@
+{
+  "name": "klaytn-hardhat",
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "build": "yarn clean && hardhat compile",
+    "test": "hardhat test",
+    "clean": "rimraf artifacts cache typechain-types ",
+    "deploy:baobab": "hardhat deploy --network baobab --verbose",
+    "deploy:cypress": "hardhat deploy --network cypress --verbose"
+  },
+  "dependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.6",
+    "@nomiclabs/hardhat-waffle": "^2.0.3",
+    "@openzeppelin/contracts": "^4.6.0",
+    "@typechain/ethers-v5": "^10.0.0",
+    "@typechain/hardhat": "^6.0.0",
+    "@types/chai": "^4.3.1",
+    "@types/chai-as-promised": "^7.1.5",
+    "@types/mocha": "^9.1.1",
+    "bignumber.js": "^9.0.2",
+    "caver-js": "^1.8.1",
+    "chai": "^4.3.6",
+    "chai-as-promised": "^7.1.1",
+    "ethereum-waffle": "^3.4.4",
+    "hardhat": "^2.9.7",
+    "hardhat-deploy": "^0.11.10",
+    "hardhat-deploy-ethers": "^0.3.0-beta.13",
+    "prettier": "^2.6.2",
+    "rimraf": "^3.0.2",
+    "ts-node": "^10.8.1",
+    "typechain": "^8.0.0",
+    "typescript": "^4.7.3"
+  }
+}
