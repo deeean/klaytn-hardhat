@@ -2,4 +2,6 @@
 .DS_Store
 .env
 cache
+artifacts
+typechain-types
 node_modules
